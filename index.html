@@ -28,7 +28,23 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
+
+  <!-- Footer section -->
+  <footer style="position: fixed; bottom: 8px; left: 50%; transform: translateX(-50%); text-align: center;">
+    <p>
+      Let's get in touch: <a href="mailto:work@pratikb.com"><code>work@pratikb.com</code></a></strong>
+    </p>
+    <p>Images are copyrighted to 
+        <a href="https://www.pratikb.com" target="_blank"><b>Pratik Bhandari</b></a> under the
+        <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.en" target="_blank">BY-NC-ND 4.0 DEED Licence</a>.
+        Find the sourcecode and licence on <a href="https://github.com/pratik-bhandari/art/" target="_blank">this</a> github repo.
+    </p> 
+        <!-- You may use these images strictly under the
+        <a href="https://raw.githubusercontent.com/pratik-bhandari/art/main/LICENCE" target="_blank">terms</a>
+        of the license.-->
+  </footer>
 </div>
+
 
 <!-- Link Bootstrap JS and your custom JavaScript -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -66,7 +82,7 @@
 
       const img = document.createElement('img');
       img.src = image;
-      img.style.maxWidth = '51%'; // Adjust the width here
+      img.style.maxWidth = '47%'; // Adjust the width here
       img.style.height = 'auto'; // Maintain aspect ratio
       img.classList.add('d-block', 'mx-auto'); // Center the image
       carouselItem.appendChild(img);
