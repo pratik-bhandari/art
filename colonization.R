@@ -3,7 +3,7 @@ library(tidyverse)
 
 # Location of the photograph
 file <- here("rawpics", "lisbon01.HEIC")
-# load.image(here("rawpics", "sara03.jpg")) %>% 
+# load.image(here("rawpics", "mypic.jpg")) %>% 
   # grayscale() %>% as.matrix -> dat.img
 
 # Load, convert to grayscale, filter image (to convert it to bw) and sample

@@ -7,8 +7,6 @@
 library(imager)
 library(tidyverse)
 library(imager)
-# library(dplyr) #dplyr and ggplot2 are already in tidyverse
-# library(ggplot2)
 library(scales)
 library(TSP)
 library(ambient) 
@@ -16,7 +14,7 @@ library(scico)
 library(here)
 
 # Import image ------------------------------------------------------------
-file <- here("rawpics", "sara03.jpg")
+file <- here("rawpics", "mypic.jpg")
 
 # Load, convert to grayscale, filter image (to convert it to bw) and sample
 # load.image(file) %>%
@@ -30,7 +28,7 @@ file <- here("rawpics", "sara03.jpg")
 # load.image(file) %>% as.cimg() %>% as.data.frame() -> dat.temp
 
 # Load, convert to grayscale, filter image (to convert it to bw) and sample
-load.image(here("rawpics", "sara03.jpg")) %>% 
+load.image(here("rawpics", "mypic.jpg")) %>% 
   grayscale() %>% as.matrix -> dat.img
 
 # Convert the matrix to data frame 
@@ -142,3 +140,12 @@ art_pic <- ggplot(
 # Save --------------------------------------------------------------------
 
 base::save.image(here::here("art.RData"))
+
+
+# Polar coordinate --------------------------------------------------------
+# This is how it works: example of changing barplot to piechart
+
+pie <- ggplot(mtcars, aes(x = factor(1), fill = factor(cyl))) +
+  geom_bar(width = 1)
+pie + coord_polar(theta = "y")
+pie + coord_polar(theta = "y") + theme_void() + theme(legend.position = 'none')

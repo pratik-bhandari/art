@@ -1,3 +1,20 @@
-# Google App Engine generated folder
+# Systems folder
 appengine-generated/
 .Rproj.user
+.Rhistory
+**/.DS_Store
+
+# User files and folders
+2020-12-11_first-day
+2022-02-20_for-postcard-gift
+img/everything
+outputs
+rawpics
+trees
+*.jpeg
+*.jpg
+.ipynb_checkpoints
+*.ipynb
+#me-gamma-[.-][0-9].jpeg
+#!me-gamma1.jpeg
+
